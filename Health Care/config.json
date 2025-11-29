@@ -1,0 +1,57 @@
+{
+  "model": {
+    "type": "RandomForestClassifier",
+    "version": "1.0.1",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "random_state": 42,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1
+    }
+  },
+  "training": {
+    "dataset_path": "heart_attack_prediction_indonesia.csv",
+    "target_column": "heart_attack",
+    "test_size": 0.2,
+    "last_trained": "2025-11-29 20:46:25",
+    "training_duration_seconds": 8.76,
+    "dataset_size": 158355
+  },
+  "metrics": {
+    "accuracy": 0.733,
+    "f1_score": 0.7262,
+    "precision": 0.7303,
+    "recall": 0.733
+  },
+  "features": [
+    "age",
+    "gender",
+    "region",
+    "income_level",
+    "hypertension",
+    "diabetes",
+    "cholesterol_level",
+    "obesity",
+    "waist_circumference",
+    "family_history",
+    "smoking_status",
+    "alcohol_consumption",
+    "physical_activity",
+    "dietary_habits",
+    "air_pollution_exposure",
+    "stress_level",
+    "sleep_hours",
+    "blood_pressure_systolic",
+    "blood_pressure_diastolic",
+    "fasting_blood_sugar",
+    "cholesterol_hdl",
+    "cholesterol_ldl",
+    "triglycerides",
+    "EKG_results",
+    "previous_heart_disease",
+    "medication_usage",
+    "participated_in_free_screening"
+  ],
+  "notes": "Training completed at 2025-11-29 20:46:25"
+}
