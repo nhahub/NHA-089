@@ -37,7 +37,18 @@ st.set_page_config(
 def load_model(path="heart_attack_final_model.pkl"):
     """Load the trained model."""
     try:
-        return joblib.load(path)
+        # Try loading from current directory first
+        if os.path.exists(path):
+            return joblib.load(path)
+        
+        # If not found, try loading from 'Heart Attack Prediction' subdirectory
+        # This handles the case when running from repository root (Streamlit Cloud)
+        alt_path = os.path.join("Heart Attack Prediction", path)
+        if os.path.exists(alt_path):
+            return joblib.load(alt_path)
+        
+        # If still not found, raise an error
+        raise FileNotFoundError(f"Model file not found at '{path}' or '{alt_path}'")
     except Exception as e:
         st.error(f"Error loading model: {e}")
         return None
