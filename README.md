@@ -188,7 +188,11 @@ This project is licensed under the MIT License.
 
 ## 👥 Authors
 
-- Mohamed Amr - Initial work
+- Mohamed Amr
+- Ghada Mohamed
+- Noureen Hussien 
+- Evronia Magdy
+  
 
 ## 🙏 Acknowledgments
 
@@ -203,3 +207,4 @@ For questions or feedback, please open an issue in the repository.
 ---
 
 **Note**: This system is designed for educational and research purposes. Always consult with qualified healthcare professionals for medical decisions.
+
