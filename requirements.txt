@@ -1,0 +1,24 @@
+# CardioGuard AI - Requirements
+
+# Core Dependencies
+dash==2.18.2
+dash[cloud]
+pandas==2.3.3
+numpy==1.26.4
+scikit-learn==1.7.2
+joblib==1.4.2
+
+# MLOps & Experiment Tracking
+mlflow==3.6.0
+cloudpickle==3.1.2
+
+# Data Processing
+scipy==1.15.2
+pyarrow==22.0.0
+
+# System Utilities
+psutil==7.0.0
+
+# Optional: For production deployment
+# gunicorn==21.2.0
+# python-dotenv==1.0.0
